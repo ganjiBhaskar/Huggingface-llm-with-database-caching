@@ -6,7 +6,7 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 
 # Set your Hugging Face API token
-os.environ['HUGGINGFACEHUB_API_TOKEN'] = "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"
+os.environ['HUGGINGFACEHUB_API_TOKEN'] = "api-tocken"
 
 # Initialize SQLite database
 def init_db():
@@ -60,7 +60,7 @@ def get_hit_counters():
 
 # Initialize Hugging Face LLM
 repo_id = "mistralai/Mistral-7B-Instruct-v0.3"
-llm = HuggingFaceEndpoint(repo_id=repo_id, max_length=128, temperature=0.7, huggingfacehub_api_token="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")
+llm = HuggingFaceEndpoint(repo_id=repo_id, max_length=128, temperature=0.7, huggingfacehub_api_token="api-tocken")
 
 # Define a prompt template
 prompt_template = PromptTemplate(
